@@ -6,7 +6,13 @@ namespace dotnet_cronometro
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            for(int hrs=0; hrs<=24; hrs++ ){
+                for(int min=0; min<60; min++){
+                    for(int seg=0; seg<60; seg++){
+                        System.Console.WriteLine($"{hrs}:{min}:{seg}");
+                    }
+                }
+            }
         }
     }
 }
