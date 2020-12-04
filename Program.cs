@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace dotnet_cronometro
 {
@@ -9,7 +10,10 @@ namespace dotnet_cronometro
             for(int hrs=0; hrs<=24; hrs++ ){
                 for(int min=0; min<60; min++){
                     for(int seg=0; seg<60; seg++){
-                        System.Console.WriteLine($"{hrs}:{min}:{seg}");
+                        Console.Clear();
+                        Console.WriteLine("Cronometro :D");
+                        Console.WriteLine($"Tempo {hrs}:{min}:{seg}");
+                        Thread.Sleep(1000);
                     }
                 }
             }
